@@ -16,3 +16,5 @@ python3 CVE-2020-14882.py -u http://targetip:port
 # Tomcat
 https://github.com/1337g/CVE-2017-12615
 python2 CVE-2017-12615.py http://targetip:port
+影響範圍 :
+Apache Tomcat 7.0.0 - 7.0.79
