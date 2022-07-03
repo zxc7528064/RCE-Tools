@@ -2,6 +2,13 @@
 http://k8gege.org/p/ab3e87f7.html
 https://pan.baidu.com/s/1cpcQeE (需要登入百度網盤)
 
+# Apache Solr
+https://github.com/c1aysec/Apache-Solr-RCE
+影響範圍 : 
+Apache Solr < 8.2.0
+use : 
+python2 http://targetip:port/ whoami
+
 # Weblogic 
 (1)https://github.com/wsfengfan/cve-2020-14882
 影響範圍 :
